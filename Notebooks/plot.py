@@ -101,7 +101,7 @@ def ranking_barchart(dataframe, columns: list[str], Reverse = False):
     plt.show()
 
 
-def efficiency_scatter(dataframe, columns):
+def efficiency_scatter(dataframe, columns, name: str):
     efficiency = [i for i in dataframe[columns[0]]]
     attempts = [i for i in dataframe[columns[1]]]
 
@@ -126,9 +126,9 @@ def efficiency_scatter(dataframe, columns):
         )
 
     plt.grid(True, linestyle = "--", alpha = 0.7)
-    plt.title("Eficiência de arremessos de quadra", fontsize = 14)
+    plt.title(name, fontsize = 14)
     plt.xlabel("Eficiência (%)", fontsize = 12)
-    plt.ylabel("Quantidade de lances livres por jogo", fontsize = 12)
+    plt.ylabel("Quantidade", fontsize = 12)
     plt.tight_layout()
 
     plt.show()
