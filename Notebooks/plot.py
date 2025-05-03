@@ -6,7 +6,7 @@ from pandas import DataFrame
 
 
 def plot_radar_charts(subjects_1, stats_1, subjects_2, stats_2, player_stats, label_media, label_player) -> Figure:
-    # Configuração do layout
+    # Configuração do layouty
     fig, axs = plt.subplots(1, 2, subplot_kw=dict(polar=True), figsize=(12, 8))  # Dois subplots lado a lado
 
     angles_1 = np.linspace(0, 2 * np.pi, len(subjects_1), endpoint=False)
