@@ -1,5 +1,5 @@
 from pandas import DataFrame, Series
-from typing import Set, List, Dict
+from typing import List
 
 def convert_to_int(dataframe: DataFrame, columns: List[str]) -> DataFrame:
     """Converte os tipos das colunas especificadas para integer
@@ -8,10 +8,9 @@ def convert_to_int(dataframe: DataFrame, columns: List[str]) -> DataFrame:
         dataframe (DataFrame): O dataframe a ser modificado
         columns (list[str]): Lista com o nome das colunas do dataframe que serão convertidas para int
 
-    Retorno:
-        Dataframe: Dataframe com as colunas convertidas
+    Returns:
+        Dataframe: Dataframe com as colunas convertidas para o tipo inteiro
     """
-
     for col in columns:
         dataframe[col] = dataframe[col].astype(int)
 
@@ -26,7 +25,7 @@ def convert_to_float(dataframe: DataFrame, columns: List[str]) -> DataFrame:
         columns (list[str]): Lista com o nome das colunas do dataframe que serão convertidas para float
 
     Retorno:
-        Dataframe: Dataframe com as colunas convertidas
+        Dataframe: Dataframe com as colunas convertidas para o tipo float
     """
     
     for col in columns:
@@ -36,6 +35,15 @@ def convert_to_float(dataframe: DataFrame, columns: List[str]) -> DataFrame:
 
 
 def percentage_transformation(dataframe, columns):
+    """Converte dados em porcentagem decimal para porcentagem percentual
+
+    Parâmetros:
+        dataframe (DataFrame): O dataframe a ser modificado
+        columns (list[str]): Lista com o nome das colunas do dataframe que serão convertidas para porcentagem percentual
+
+    Retorno:
+        Dataframe: Dataframe com os dados das colunas convertidas para porcentagem percentual
+    """
     for i in columns:
         dataframe[i] = dataframe[i] * 100
 
