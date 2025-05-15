@@ -1,4 +1,4 @@
-# Indiana Pacers Analysis
+# Análise da temporada regular 2023-2024 do Indiana Pacers
 
 ### Descrição
 Este projeto realiza uma análise descritiva da temporada regular 2023-2024 do Indiana Pacers, baseada na seguinte business question: "Quais fatores estatísticos mais contribuíram para o sucesso do Indiana Pacers na temporada 23-24 e quais podem ser melhorados?".
