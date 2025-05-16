@@ -13,7 +13,7 @@ Este projeto realiza uma análise descritiva da temporada regular 2023-2024 do I
  - Nba-player-data(in): dataset publicado no kaggle por orkunaktas4. Clique [aqui](https://www.kaggle.com/datasets/orkunaktas/nba-players-stats-2324) para acessá-lo
 
 ### Ferramentas
- - Python 3.11
+ - Python
  - Pandas
  - Numpy
  - Matplotlib
